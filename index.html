@@ -1,47 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Charity: Water Landing Page</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #b25b0f, #d97706);
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 900;
+      color: #111827;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero {
+      background: #3b2a1a;
+      color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    .hero-content {
+      padding: 2rem;
+      flex: 1;
+    }
+
+    .hero-content h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 800;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .cta {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .cta button {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .cta .subscribe {
+      background: #facc15;
+      color: #1f2937;
+    }
+
+    .cta .trial {
+      background: #fff;
+      color: #3b2a1a;
+    }
+
+    .hero img {
+      width: 100%;
+      object-fit: cover;
+      max-height: 300px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.875rem;
+      color: #374151;
+    }
+  </style>
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
+  <header>
+    <h1>LANDING PAGE</h1>
+  </header>
+
+  <main class="container">
     <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
-
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
+      <div class="hero-content">
+        <h2>Every Drop Tells a Story.</h2>
         <p>
-         
-    </section>
-
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
+          From villages gaining their first clean water to families rewriting their futures, 
+          your donation creates measurable change you'll witness firsthand. 
+          2.2 billion people in the world lack access to safe water, and true change is needed.
+        </p>
+        <div class="cta">
+          <button class="subscribe">Join us today</button>
+          <button class="trial">Free Trial</button>
         </div>
+      </div>
+      <img src="https://cdn.builder.io/api/v1/image/assets/2fe4147bb8c843bb8ebba475c8973899/3e5c2663c90a4a1b9bbb53a603cd3a19" alt="Child drinking water">
     </section>
+  </main>
 
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <footer>
+    © 2025 Charity: Water. All rights reserved.
+  </footer>
 </body>
 </html>
